@@ -118,24 +118,28 @@ if (contactForm) {
     if (valid) {
       const submitText = document.getElementById('submitText');
       const submitLoading = document.getElementById('submitLoading');
+      const formSuccess = document.getElementById('formSuccess');
       submitText.style.display = 'none';
       submitLoading.style.display = 'inline-flex';
 
+      const data = new FormData(contactForm);
+
       try {
-        const response = await fetch(contactForm.action, {
+        const response = await fetch('https://formspree.io/f/mkoyrqjp', {
           method: 'POST',
-          body: new FormData(contactForm),
+          body: data,
           headers: { 'Accept': 'application/json' }
         });
 
+        const result = await response.json();
+
         if (response.ok) {
-          document.getElementById('formSuccess').style.display = 'flex';
+          formSuccess.style.display = 'flex';
           contactForm.reset();
-          setTimeout(() => {
-            document.getElementById('formSuccess').style.display = 'none';
-          }, 6000);
+          setTimeout(() => { formSuccess.style.display = 'none'; }, 6000);
         } else {
-          alert('Something went wrong. Please try again or email us directly.');
+          const errorMsg = result.errors ? result.errors.map(e => e.message).join(', ') : 'Submission failed.';
+          alert('Error: ' + errorMsg);
         }
       } catch (err) {
         alert('Network error. Please check your connection and try again.');
