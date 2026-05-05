@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects and portfolio of Receptor Engineering Hub - Solar, Security, Web Development and Engineering projects in Uganda." />
+  <title>Projects | Receptor Engineering Hub</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="receptorhub.png" alt="Receptor Engineering Hub" class="logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-tag">Our Work</span>
+      <h1>Projects &amp; Portfolio</h1>
+      <p>A showcase of engineering, digital, and creative projects we've delivered.</p>
+    </div>
+  </section>
+
+  <!-- Filter + Portfolio -->
+  <section class="section portfolio-section">
+    <div class="container">
+      <div class="portfolio-filters" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="engineering">Engineering</button>
+        <button class="filter-btn" data-filter="solar">Solar</button>
+        <button class="filter-btn" data-filter="security">Security</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <div class="portfolio-card" data-category="solar" data-aos="fade-up">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=500&q=80" alt="Solar installation project" loading="lazy" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">Solar</span>
+              <h4>Residential Solar System</h4>
+              <p>5kW solar installation for a family home in Kampala</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="security" data-aos="fade-up" data-aos-delay="100">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80" alt="CCTV security installation" loading="lazy" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">Security</span>
+              <h4>Commercial CCTV Setup</h4>
+              <p>32-camera CCTV system for a shopping complex in Entebbe</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="web" data-aos="fade-up" data-aos-delay="200">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&q=80" alt="Web development project" loading="lazy" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">Web Dev</span>
+              <h4>NGO Website</h4>
+              <p>Full website with donation portal for a Kampala-based NGO</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="engineering" data-aos="fade-up" data-aos-delay="300">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500&q=80" alt="Electrical engineering project" loading="lazy" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">Engineering</span>
+              <h4>Industrial Electrical Wiring</h4>
+              <p>Complete electrical installation for a factory in Jinja</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="solar" data-aos="fade-up" data-aos-delay="0">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=500&q=80" alt="Commercial solar project" loading="lazy" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">Solar</span>
+              <h4>Commercial Solar Farm</h4>
+              <p>20kW solar system for a hotel in Mbarara</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="design" data-aos="fade-up" data-aos-delay="100">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&q=80" alt="Graphics design project" loading="lazy" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">Design</span>
+              <h4>Brand Identity Package</h4>
+              <p>Complete branding for a logistics company in Kampala</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="security" data-aos="fade-up" data-aos-delay="200">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=500&q=80" alt="Electric fence installation" loading="lazy" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">Security</span>
+              <h4>Electric Fence Installation</h4>
+              <p>Perimeter security for a residential estate in Wakiso</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="web" data-aos="fade-up" data-aos-delay="300">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=80" alt="E-commerce website" loading="lazy" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">Web Dev</span>
+              <h4>E-Commerce Platform</h4>
+              <p>Online store with payment integration for a retail business</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="engineering" data-aos="fade-up" data-aos-delay="0">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&q=80" alt="Power backup system" loading="lazy" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">Engineering</span>
+              <h4>Power Backup System</h4>
+              <p>UPS and inverter setup for a hospital in Gulu</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section stats-section">
+    <div class="container stats-grid">
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
+        <span class="stat-big" data-count="200">0</span><span class="stat-plus">+</span>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+        <span class="stat-big" data-count="150">0</span><span class="stat-plus">+</span>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+        <span class="stat-big" data-count="5">0</span><span class="stat-plus">+</span>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+        <span class="stat-big" data-count="10">0</span><span class="stat-plus">+</span>
+        <p>Service Categories</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-content">
+      <div>
+        <h2>Have a Project in Mind?</h2>
+        <p>Let's discuss how we can bring your vision to life.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-white">Start a Project</a>
+        <a href="services.html" class="btn btn-outline-white">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-light">
+          <img src="receptorhub.png" alt="Receptor Engineering Hub" class="logo-img logo-img-footer" />
+        </a>
+        <p>Powering Innovation. Securing the Future. Building Digital Excellence.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#solar">Solar Systems</a></li>
+          <li><a href="services.html#security">Security Systems</a></li>
+          <li><a href="services.html#power">Power Solutions</a></li>
+          <li><a href="services.html#web">Web Development</a></li>
+          <li><a href="services.html#graphics">Graphics &amp; Signage</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+256777728404">+256 777 728 404</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:receptorengineeringhub@gmail.com">receptorengineeringhub@gmail.com</a></li>
+          <li><i class="fas fa-clock"></i> Mon–Sat: 8am – 6pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Receptor Engineering Hub. All rights reserved.</p>
+        <p>Designed with <i class="fas fa-heart" style="color:#f97316"></i> in Uganda</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/256777728404?text=Hello%20Receptor%20Engineering%20Hub%2C%20I%20need%20your%20services." class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat with us</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
