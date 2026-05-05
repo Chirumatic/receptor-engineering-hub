@@ -125,7 +125,7 @@ if (contactForm) {
       const data = new FormData(contactForm);
 
       try {
-        const response = await fetch('https://formspree.io/f/mkoyrqjp', {
+        const response = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
           body: data,
           headers: { 'Accept': 'application/json' }
@@ -133,13 +133,12 @@ if (contactForm) {
 
         const result = await response.json();
 
-        if (response.ok) {
+        if (result.success) {
           formSuccess.style.display = 'flex';
           contactForm.reset();
           setTimeout(() => { formSuccess.style.display = 'none'; }, 6000);
         } else {
-          const errorMsg = result.errors ? result.errors.map(e => e.message).join(', ') : 'Submission failed.';
-          alert('Error: ' + errorMsg);
+          alert('Error: ' + (result.message || 'Submission failed. Please try again.'));
         }
       } catch (err) {
         alert('Network error. Please check your connection and try again.');
