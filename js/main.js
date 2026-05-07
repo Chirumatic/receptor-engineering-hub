@@ -9,6 +9,21 @@ if (slides.length) {
   }, 4000);
 }
 
+/* ===== WHY US & PAGE HERO SLIDESHOW ===== */
+function initSlideshow(selector) {
+  const items = document.querySelectorAll(selector);
+  if (items.length > 1) {
+    let current = 0;
+    setInterval(() => {
+      items[current].classList.remove('active');
+      current = (current + 1) % items.length;
+      items[current].classList.add('active');
+    }, 4500);
+  }
+}
+initSlideshow('.why-slide');
+initSlideshow('.page-hero-slide');
+
 /* ===== NAVBAR SCROLL ===== */
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
