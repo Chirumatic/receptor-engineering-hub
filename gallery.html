@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="k3c63kH6gn9kZT188aulxfWurAG4fihmwfax7aLUwMc" />
+  <meta name="description" content="Gallery - Receptor Engineering Hub project photos and work showcase." />
+  <title>Gallery | Receptor Engineering Hub</title>
+  <link rel="icon" type="image/png" href="receptorhub.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="receptorhub.png" alt="Receptor Engineering Hub" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-main">Receptor Engineering Hub</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-tag">Our Work in Pictures</span>
+      <h1>Gallery</h1>
+      <p>A visual showcase of our engineering, solar, security and digital projects.</p>
+    </div>
+  </section>
+
+  <section class="section gallery-section">
+    <div class="container">
+      <div class="portfolio-filters" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="solar">Solar</button>
+        <button class="filter-btn" data-filter="security">Security</button>
+        <button class="filter-btn" data-filter="engineering">Engineering</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item" data-category="solar" data-aos="fade-up">
+          <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80" alt="Solar installation" loading="lazy" />
+          <div class="gallery-caption"><span>Solar Systems</span><p>Residential solar installation</p></div>
+        </div>
+        <div class="gallery-item" data-category="security" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="CCTV installation" loading="lazy" />
+          <div class="gallery-caption"><span>Security</span><p>CCTV camera setup</p></div>
+        </div>
+        <div class="gallery-item" data-category="engineering" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80" alt="Electrical engineering" loading="lazy" />
+          <div class="gallery-caption"><span>Engineering</span><p>Industrial electrical wiring</p></div>
+        </div>
+        <div class="gallery-item" data-category="solar" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=600&q=80" alt="Commercial solar" loading="lazy" />
+          <div class="gallery-caption"><span>Solar</span><p>Commercial solar farm</p></div>
+        </div>
+        <div class="gallery-item" data-category="web" data-aos="fade-up" data-aos-delay="0">
+          <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80" alt="Web development" loading="lazy" />
+          <div class="gallery-caption"><span>Web Dev</span><p>Business website project</p></div>
+        </div>
+        <div class="gallery-item" data-category="design" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80" alt="Graphics design" loading="lazy" />
+          <div class="gallery-caption"><span>Design</span><p>Brand identity package</p></div>
+        </div>
+        <div class="gallery-item" data-category="security" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=600&q=80" alt="Electric fence" loading="lazy" />
+          <div class="gallery-caption"><span>Security</span><p>Electric fence installation</p></div>
+        </div>
+        <div class="gallery-item" data-category="engineering" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="Power backup" loading="lazy" />
+          <div class="gallery-caption"><span>Engineering</span><p>Power backup system</p></div>
+        </div>
+        <div class="gallery-item" data-category="web" data-aos="fade-up" data-aos-delay="0">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="E-commerce" loading="lazy" />
+          <div class="gallery-caption"><span>Web Dev</span><p>E-commerce platform</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+    <button class="lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+    <button class="lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="" />
+      <p id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <section class="cta-banner">
+    <div class="container cta-content">
+      <div>
+        <h2>Like What You See?</h2>
+        <p>Get in touch and let's work on your project.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-white">Start a Project</a>
+        <a href="services.html" class="btn btn-outline-white">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-light">
+          <img src="receptorhub.png" alt="Receptor Engineering Hub" class="logo-img logo-img-footer" />
+        </a>
+        <p>Powering Innovation. Securing the Future. Building Digital Excellence.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#solar">Solar Systems</a></li>
+          <li><a href="services.html#security">Security Systems</a></li>
+          <li><a href="services.html#power">Power Solutions</a></li>
+          <li><a href="services.html#web">Web Development</a></li>
+          <li><a href="services.html#graphics">Graphics &amp; Signage</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+256777728404">+256 777 728 404</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:receptorengineeringhub@gmail.com">receptorengineeringhub@gmail.com</a></li>
+          <li><i class="fas fa-clock"></i> Mon–Fri: 8:30am–5pm | Sat &amp; Holidays: 9am–4pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Receptor Engineering Hub. All rights reserved.</p>
+        <p>Designed with <i class="fas fa-heart" style="color:#f97316"></i> in Uganda</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/256777728404?text=Hello%20Receptor%20Engineering%20Hub%2C%20I%20need%20your%20services." class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat with us</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
