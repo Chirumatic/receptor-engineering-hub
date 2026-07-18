@@ -3,14 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1600&q=80&auto=format&fit=crop" fetchpriority="high" />
+
     <meta name="google-site-verification" content="k3c63kH6gn9kZT188aulxfWurAG4fihmwfax7aLUwMc" />
   <meta name="description" content="Receptor Engineering Hub - Innovative Engineering & Digital Solutions You Can Trust. Solar, Security, Power, Web Development and more in Uganda." />
   <meta name="keywords" content="engineering, solar, security, CCTV, web development, power backup, Uganda" />
   <title>Receptor Engineering Hub</title>
     <link rel="icon" type="image/png" href="receptorhub.png" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" /></noscript>
 </head>
 <body>
 
@@ -18,7 +22,7 @@
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
       <a href="index.html" class="logo">
-        <img src="receptorhub.png" alt="Receptor Engineering Hub" class="logo-img" />
+        <img src="receptorhub.png" alt="Receptor Engineering Hub" class="logo-img" width="48" height="68" />
         <div class="logo-text">
           <span class="logo-main">Receptor Engineering Hub</span>
         </div>
@@ -38,18 +42,19 @@
     </div>
   </nav>
 
+  <main>
+
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-slideshow">
-      <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1600&q=80')"></div>
-      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1600&q=80')"></div>
-      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80')"></div>
-      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1600&q=80')"></div>
+      <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1600&q=80&auto=format&fit=crop')"></div>
+      <div class="hero-slide" data-bg="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1600&q=80&auto=format&fit=crop"></div>
+      <div class="hero-slide" data-bg="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80&auto=format&fit=crop"></div>
+      <div class="hero-slide" data-bg="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1600&q=80&auto=format&fit=crop"></div>
       <div class="hero-overlay"></div>
     </div>
     <div class="container hero-content">
       <div class="hero-text" data-aos="fade-up">
-        <span class="hero-badge">Uganda's Trusted Engineering Partner</span>
         <div class="hero-headline">
           <h1>Innovative Engineering &amp; Digital Solutions <span class="highlight">You Can Trust</span></h1>
         </div>
@@ -57,7 +62,7 @@
       </div>
       <div class="hero-right" data-aos="fade-left">
         <div class="hero-actions">
-          <a href="contact.html" class="btn btn-primary btn-lg">Get a Quote <i class="fas fa-arrow-right"></i></a>
+          <a href="contact.html" class="btn btn-primary btn-lg">Get a Quote <svg class="icon" aria-hidden="true"><use href="icons.svg#fa-arrow-right"></use></svg></a>
           <a href="services.html" class="btn btn-outline btn-lg">Our Services</a>
         </div>
         <div class="hero-stats">
@@ -82,44 +87,44 @@
       </div>
       <div class="services-grid">
         <div class="service-card" data-aos="fade-up" data-aos-delay="0">
-          <div class="service-icon orange"><i class="fas fa-solar-panel"></i></div>
+          <div class="service-icon orange"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-solar-panel"></use></svg></div>
           <h3>Solar Systems</h3>
           <p>Complete solar installation and maintenance for homes and businesses.</p>
-          <a href="services.html#solar" class="service-link">Learn More <i class="fas fa-chevron-right"></i></a>
+          <a href="services.html#solar" class="service-link">Learn More <span class="sr-only">about Solar Systems</span> <svg class="icon" aria-hidden="true"><use href="icons.svg#fa-chevron-right"></use></svg></a>
         </div>
         <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-icon blue"><i class="fas fa-video"></i></div>
+          <div class="service-icon blue"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-video"></use></svg></div>
           <h3>Security Systems</h3>
           <p>CCTV, alarms, access control and electric fence installations.</p>
-          <a href="services.html#security" class="service-link">Learn More <i class="fas fa-chevron-right"></i></a>
+          <a href="services.html#security" class="service-link">Learn More <span class="sr-only">about Security Systems</span> <svg class="icon" aria-hidden="true"><use href="icons.svg#fa-chevron-right"></use></svg></a>
         </div>
         <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="service-icon green"><i class="fas fa-bolt"></i></div>
+          <div class="service-icon green"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-bolt"></use></svg></div>
           <h3>Power Solutions</h3>
           <p>Reliable power backup systems and electrical installations.</p>
-          <a href="services.html#power" class="service-link">Learn More <i class="fas fa-chevron-right"></i></a>
+          <a href="services.html#power" class="service-link">Learn More <span class="sr-only">about Power Solutions</span> <svg class="icon" aria-hidden="true"><use href="icons.svg#fa-chevron-right"></use></svg></a>
         </div>
         <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="service-icon orange"><i class="fas fa-laptop-code"></i></div>
+          <div class="service-icon orange"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-laptop-code"></use></svg></div>
           <h3>Web Development</h3>
           <p>Modern, responsive websites and full-stack web applications.</p>
-          <a href="services.html#web" class="service-link">Learn More <i class="fas fa-chevron-right"></i></a>
+          <a href="services.html#web" class="service-link">Learn More <span class="sr-only">about Web Development</span> <svg class="icon" aria-hidden="true"><use href="icons.svg#fa-chevron-right"></use></svg></a>
         </div>
         <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="service-icon blue"><i class="fas fa-microchip"></i></div>
+          <div class="service-icon blue"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-microchip"></use></svg></div>
           <h3>Electronics Solutions</h3>
           <p>Electronic repairs, installations and custom electronics projects.</p>
-          <a href="services.html#electronics" class="service-link">Learn More <i class="fas fa-chevron-right"></i></a>
+          <a href="services.html#electronics" class="service-link">Learn More <span class="sr-only">about Electronics Solutions</span> <svg class="icon" aria-hidden="true"><use href="icons.svg#fa-chevron-right"></use></svg></a>
         </div>
         <div class="service-card" data-aos="fade-up" data-aos-delay="500">
-          <div class="service-icon green"><i class="fas fa-paint-brush"></i></div>
+          <div class="service-icon green"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-paint-brush"></use></svg></div>
           <h3>Graphics &amp; Signage</h3>
           <p>Professional branding, graphics design and signage solutions.</p>
-          <a href="services.html#graphics" class="service-link">Learn More <i class="fas fa-chevron-right"></i></a>
+          <a href="services.html#graphics" class="service-link">Learn More <span class="sr-only">about Graphics & Signage</span> <svg class="icon" aria-hidden="true"><use href="icons.svg#fa-chevron-right"></use></svg></a>
         </div>
       </div>
       <div class="section-cta" data-aos="fade-up">
-        <a href="services.html" class="btn btn-primary">View All Services <i class="fas fa-arrow-right"></i></a>
+        <a href="services.html" class="btn btn-primary">View All Services <svg class="icon" aria-hidden="true"><use href="icons.svg#fa-arrow-right"></use></svg></a>
       </div>
     </div>
   </section>
@@ -129,8 +134,8 @@
     <div class="container about-grid">
       <div class="about-image" data-aos="fade-right">
         <div class="about-img-wrapper">
-          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80" alt="Engineering team at work" loading="lazy" />
-          <div class="about-badge"><i class="fas fa-award"></i><span>Trusted Since 2019</span></div>
+          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80&auto=format&fit=crop" alt="Engineering team at work" loading="lazy" width="600" height="400" />
+          <div class="about-badge"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-award"></use></svg><span>Trusted Since 2019</span></div>
         </div>
       </div>
       <div class="about-content" data-aos="fade-left">
@@ -138,10 +143,10 @@
         <h2>Engineering Excellence, Delivered</h2>
         <p>Receptor Engineering Hub is a Uganda-based multi-service company combining engineering expertise with digital innovation. We serve businesses, homeowners, and organizations with reliable, high-quality solutions.</p>
         <ul class="about-features">
-          <li><i class="fas fa-check-circle"></i> Certified and experienced engineers</li>
-          <li><i class="fas fa-check-circle"></i> End-to-end project management</li>
-          <li><i class="fas fa-check-circle"></i> Affordable, quality-first approach</li>
-          <li><i class="fas fa-check-circle"></i> After-sales support and maintenance</li>
+          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-check-circle"></use></svg> Certified and experienced engineers</li>
+          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-check-circle"></use></svg> End-to-end project management</li>
+          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-check-circle"></use></svg> Affordable, quality-first approach</li>
+          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-check-circle"></use></svg> After-sales support and maintenance</li>
         </ul>
         <a href="about.html" class="btn btn-primary">Learn More About Us</a>
       </div>
@@ -151,9 +156,9 @@
   <!-- Why Choose Us -->
   <section class="section why-us">
     <div class="why-us-slideshow">
-      <div class="why-slide active" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80')"></div>
-      <div class="why-slide" style="background-image: url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1600&q=80')"></div>
-      <div class="why-slide" style="background-image: url('https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=1600&q=80')"></div>
+      <div class="why-slide active" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80&auto=format&fit=crop')"></div>
+      <div class="why-slide" data-bg="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1600&q=80&auto=format&fit=crop"></div>
+      <div class="why-slide" data-bg="https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=1600&q=80&auto=format&fit=crop"></div>
       <div class="why-us-overlay"></div>
     </div>
     <div class="container" style="position:relative;z-index:1">
@@ -163,22 +168,22 @@
       </div>
       <div class="why-grid">
         <div class="why-card" data-aos="fade-up" data-aos-delay="0">
-          <div class="why-icon"><i class="fas fa-medal"></i></div>
+          <div class="why-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-medal"></use></svg></div>
           <h3>Quality Assured</h3>
           <p>Every project meets the highest standards of quality and safety.</p>
         </div>
         <div class="why-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="why-icon"><i class="fas fa-clock"></i></div>
+          <div class="why-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-clock"></use></svg></div>
           <h3>On-Time Delivery</h3>
           <p>We respect your time and deliver projects on schedule.</p>
         </div>
         <div class="why-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="why-icon"><i class="fas fa-headset"></i></div>
+          <div class="why-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-headset"></use></svg></div>
           <h3>24/7 Support</h3>
           <p>Our team is always available to assist you after installation.</p>
         </div>
         <div class="why-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="why-icon"><i class="fas fa-tags"></i></div>
+          <div class="why-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-tags"></use></svg></div>
           <h3>Competitive Pricing</h3>
           <p>Premium solutions at prices that work for every budget.</p>
         </div>
@@ -195,7 +200,7 @@
       </div>
       <div class="testimonials-grid">
         <div class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
-          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <div class="stars"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-star"></use></svg><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-star"></use></svg><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-star"></use></svg><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-star"></use></svg><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-star"></use></svg></div>
           <p>"Receptor Engineering Hub installed our solar system and it has been running flawlessly. Professional team, great service!"</p>
           <div class="testimonial-author">
             <div class="author-avatar">JK</div>
@@ -203,7 +208,7 @@
           </div>
         </div>
         <div class="testimonial-card" data-aos="fade-up" data-aos-delay="150">
-          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <div class="stars"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-star"></use></svg><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-star"></use></svg><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-star"></use></svg><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-star"></use></svg><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-star"></use></svg></div>
           <p>"They built our company website and it looks amazing. Very responsive and delivered on time. Highly recommended!"</p>
           <div class="testimonial-author">
             <div class="author-avatar">SM</div>
@@ -211,7 +216,7 @@
           </div>
         </div>
         <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <div class="stars"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-star"></use></svg><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-star"></use></svg><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-star"></use></svg><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-star"></use></svg><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-star"></use></svg></div>
           <p>"Our CCTV and access control system was installed perfectly. The team was knowledgeable and very professional."</p>
           <div class="testimonial-author">
             <div class="author-avatar">RO</div>
@@ -231,28 +236,30 @@
       </div>
       <div class="cta-actions">
         <a href="contact.html" class="btn btn-white">Get a Free Quote</a>
-        <a href="tel:+256777728404" class="btn btn-outline-white"><i class="fas fa-phone"></i> Call Us Now</a>
+        <a href="tel:+256777728404" class="btn btn-outline-white"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-phone"></use></svg> Call Us Now</a>
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="logo logo-light">
-          <img src="receptorhub.png" alt="Receptor Engineering Hub" class="logo-img logo-img-footer" />
+          <img src="receptorhub.png" alt="Receptor Engineering Hub" class="logo-img logo-img-footer" width="51" height="72" />
         </a>
         <p>Powering Innovation. Securing the Future. Building Digital Excellence.</p>
         <div class="social-links">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-facebook-f"></use></svg></a>
+          <a href="#" aria-label="Twitter"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-twitter"></use></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-linkedin-in"></use></svg></a>
+          <a href="#" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-instagram"></use></svg></a>
         </div>
       </div>
       <div class="footer-links">
-        <h4>Quick Links</h4>
+        <h3>Quick Links</h3>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
@@ -263,7 +270,7 @@
         </ul>
       </div>
       <div class="footer-links">
-        <h4>Services</h4>
+        <h3>Services</h3>
         <ul>
           <li><a href="services.html#solar">Solar Systems</a></li>
           <li><a href="services.html#security">Security Systems</a></li>
@@ -273,30 +280,30 @@
         </ul>
       </div>
       <div class="footer-contact">
-        <h4>Contact Us</h4>
+        <h3>Contact Us</h3>
         <ul>
-          <li><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</li>
-          <li><i class="fas fa-phone"></i> <a href="tel:+256777728404">+256 777 728 404</a></li>
-          <li><i class="fas fa-envelope"></i> <a href="mailto:receptorengineeringhub@gmail.com">receptorengineeringhub@gmail.com</a></li>
-          <li><i class="fas fa-clock"></i> Mon–Fri: 8:30am–5pm | Sat &amp; Holidays: 9am–4pm</li>
+          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-map-marker-alt"></use></svg> Kampala, Uganda</li>
+          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-phone"></use></svg> <a href="tel:+256777728404">+256 777 728 404</a></li>
+          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-envelope"></use></svg> <a href="mailto:receptorengineeringhub@gmail.com">receptorengineeringhub@gmail.com</a></li>
+          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-clock"></use></svg> Mon–Fri: 8:30am–5pm | Sat &amp; Holidays: 9am–4pm</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="container">
         <p>&copy; 2025 Receptor Engineering Hub. All rights reserved.</p>
-        <p>Designed with <i class="fas fa-heart" style="color:#f97316"></i> in Uganda</p>
+        <p>Designed with <svg class="icon" aria-hidden="true" style="color:#f97316"><use href="icons.svg#fa-heart"></use></svg> in Uganda</p>
       </div>
     </div>
   </footer>
 
   <!-- WhatsApp Button -->
   <a href="https://wa.me/256777728404?text=Hello%20Receptor%20Engineering%20Hub%2C%20I%20need%20your%20services." class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
+    <svg class="icon" aria-hidden="true"><use href="icons.svg#fa-whatsapp"></use></svg>
     <span class="whatsapp-tooltip">Chat with us</span>
   </a>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>
 

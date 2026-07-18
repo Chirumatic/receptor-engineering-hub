@@ -1,28 +1,38 @@
-/* ===== HERO SLIDESHOW ===== */
-const slides = document.querySelectorAll('.hero-slide');
-if (slides.length) {
-  let current = 0;
-  setInterval(() => {
-    slides[current].classList.remove('active');
-    current = (current + 1) % slides.length;
-    slides[current].classList.add('active');
-  }, 4000);
+/* ===== SLIDESHOW IMAGE LOADING =====
+   Slide 1 in each slideshow loads its background image immediately (inline
+   in the HTML) because it's the LCP element. Every other slide only carries
+   a data-bg attribute in the HTML so the browser doesn't fetch it on page
+   load. We load each slide's image just before it's needed, so it's cached
+   and ready by the time it becomes visible, without competing with the
+   critical first paint. */
+function loadSlideBg(slide) {
+  if (slide && slide.dataset.bg) {
+    slide.style.backgroundImage = `url('${slide.dataset.bg}')`;
+    delete slide.dataset.bg;
+  }
 }
 
-/* ===== WHY US & PAGE HERO SLIDESHOW ===== */
-function initSlideshow(selector) {
+function initSlideshow(selector, interval) {
   const items = document.querySelectorAll(selector);
   if (items.length > 1) {
+    // Preload slide 2 shortly after load (well after the LCP window),
+    // then preload each upcoming slide one step ahead during rotation.
+    setTimeout(() => loadSlideBg(items[1]), 1500);
     let current = 0;
     setInterval(() => {
       items[current].classList.remove('active');
       current = (current + 1) % items.length;
       items[current].classList.add('active');
-    }, 4500);
+      const next = items[(current + 1) % items.length];
+      loadSlideBg(next);
+    }, interval);
   }
 }
-initSlideshow('.why-slide');
-initSlideshow('.page-hero-slide');
+
+/* ===== HERO / PAGE HERO / WHY US SLIDESHOWS ===== */
+initSlideshow('.hero-slide', 4000);
+initSlideshow('.why-slide', 4500);
+initSlideshow('.page-hero-slide', 4500);
 
 /* ===== NAVBAR SCROLL ===== */
 const navbar = document.getElementById('navbar');

@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80&auto=format&fit=crop" fetchpriority="high" />
+
     <meta name="google-site-verification" content="k3c63kH6gn9kZT188aulxfWurAG4fihmwfax7aLUwMc" />
   <meta name="description" content="Contact Receptor Engineering Hub - Get a quote, ask a question, or visit us in Kampala, Uganda." />
   <title>Contact | Receptor Engineering Hub</title>
     <link rel="icon" type="image/png" href="receptorhub.png" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" /></noscript>
 </head>
 <body>
 
@@ -17,7 +21,7 @@
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
       <a href="index.html" class="logo">
-        <img src="receptorhub.png" alt="Receptor Engineering Hub" class="logo-img" />
+        <img src="receptorhub.png" alt="Receptor Engineering Hub" class="logo-img" width="48" height="68" />
         <div class="logo-text">
           <span class="logo-main">Receptor Engineering Hub</span>
         </div>
@@ -37,12 +41,14 @@
     </div>
   </nav>
 
+  <main>
+
   <!-- Page Hero -->
   <section class="page-hero">
     <div class="page-hero-slideshow">
-      <div class="page-hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80')"></div>
-      <div class="page-hero-slide" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1600&q=80')"></div>
-      <div class="page-hero-slide" style="background-image: url('https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1600&q=80')"></div>
+      <div class="page-hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80&auto=format&fit=crop')"></div>
+      <div class="page-hero-slide" data-bg="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1600&q=80&auto=format&fit=crop"></div>
+      <div class="page-hero-slide" data-bg="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1600&q=80&auto=format&fit=crop"></div>
       <div class="page-hero-overlay"></div>
     </div>
     <div class="container" style="position:relative;z-index:1">
@@ -63,30 +69,30 @@
 
         <div class="contact-items">
           <div class="contact-item">
-            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-item-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-map-marker-alt"></use></svg></div>
             <div>
-              <h4>Our Location</h4>
+              <h3>Our Location</h3>
               <p>Kampala, Uganda</p>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-item-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-phone"></use></svg></div>
             <div>
-              <h4>Phone Number</h4>
+              <h3>Phone Number</h3>
               <p><a href="tel:+256777728404">+256 777 728 404</a></p>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-item-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-envelope"></use></svg></div>
             <div>
-              <h4>Email Address</h4>
+              <h3>Email Address</h3>
               <p><a href="mailto:receptorengineeringhub@gmail.com">receptorengineeringhub@gmail.com</a></p>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-item-icon"><i class="fas fa-clock"></i></div>
+            <div class="contact-item-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-clock"></use></svg></div>
             <div>
-              <h4>Working Hours</h4>
+              <h3>Working Hours</h3>
               <p>Monday – Friday: 8:30am – 5:00pm</p>
               <p>Saturday &amp; Public Holidays: 9:00am – 4:00pm</p>
             </div>
@@ -94,13 +100,13 @@
         </div>
 
         <div class="contact-social">
-          <h4>Follow Us</h4>
+          <h3>Follow Us</h3>
           <div class="social-links">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/256700000000" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-facebook-f"></use></svg></a>
+            <a href="#" aria-label="Twitter"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-twitter"></use></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-linkedin-in"></use></svg></a>
+            <a href="#" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-instagram"></use></svg></a>
+            <a href="https://wa.me/256700000000" aria-label="WhatsApp" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-whatsapp"></use></svg></a>
           </div>
         </div>
       </div>
@@ -150,11 +156,11 @@
             <span class="form-error" id="messageError"></span>
           </div>
           <button type="submit" class="btn btn-primary btn-full">
-            <span id="submitText">Send Message <i class="fas fa-paper-plane"></i></span>
-            <span id="submitLoading" style="display:none"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+            <span id="submitText">Send Message <svg class="icon" aria-hidden="true"><use href="icons.svg#fa-paper-plane"></use></svg></span>
+            <span id="submitLoading" style="display:none"><svg class="icon icon-spin" aria-hidden="true"><use href="icons.svg#fa-spinner"></use></svg> Sending...</span>
           </button>
           <div class="form-success" id="formSuccess" style="display:none">
-            <i class="fas fa-check-circle"></i> Thank you! We'll get back to you within 24 hours.
+            <svg class="icon" aria-hidden="true"><use href="icons.svg#fa-check-circle"></use></svg> Thank you! We'll get back to you within 24 hours.
           </div>
         </form>
       </div>
@@ -179,23 +185,25 @@
     </div>
   </section>
 
+  </main>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="logo logo-light">
-          <img src="receptorhub.png" alt="Receptor Engineering Hub" class="logo-img logo-img-footer" />
+          <img src="receptorhub.png" alt="Receptor Engineering Hub" class="logo-img logo-img-footer" width="51" height="72" />
         </a>
         <p>Powering Innovation. Securing the Future. Building Digital Excellence.</p>
         <div class="social-links">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-facebook-f"></use></svg></a>
+          <a href="#" aria-label="Twitter"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-twitter"></use></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-linkedin-in"></use></svg></a>
+          <a href="#" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-instagram"></use></svg></a>
         </div>
       </div>
       <div class="footer-links">
-        <h4>Quick Links</h4>
+        <h3>Quick Links</h3>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
@@ -206,7 +214,7 @@
         </ul>
       </div>
       <div class="footer-links">
-        <h4>Services</h4>
+        <h3>Services</h3>
         <ul>
           <li><a href="services.html#solar">Solar Systems</a></li>
           <li><a href="services.html#security">Security Systems</a></li>
@@ -216,29 +224,29 @@
         </ul>
       </div>
       <div class="footer-contact">
-        <h4>Contact Us</h4>
+        <h3>Contact Us</h3>
         <ul>
-          <li><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</li>
-          <li><i class="fas fa-phone"></i> <a href="tel:+256777728404">+256 777 728 404</a></li>
-          <li><i class="fas fa-envelope"></i> <a href="mailto:receptorengineeringhub@gmail.com">receptorengineeringhub@gmail.com</a></li>
-          <li><i class="fas fa-clock"></i> Mon–Fri: 8:30am–5pm | Sat &amp; Holidays: 9am–4pm</li>
+          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-map-marker-alt"></use></svg> Kampala, Uganda</li>
+          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-phone"></use></svg> <a href="tel:+256777728404">+256 777 728 404</a></li>
+          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-envelope"></use></svg> <a href="mailto:receptorengineeringhub@gmail.com">receptorengineeringhub@gmail.com</a></li>
+          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-clock"></use></svg> Mon–Fri: 8:30am–5pm | Sat &amp; Holidays: 9am–4pm</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="container">
         <p>&copy; 2025 Receptor Engineering Hub. All rights reserved.</p>
-        <p>Designed with <i class="fas fa-heart" style="color:#f97316"></i> in Uganda</p>
+        <p>Designed with <svg class="icon" aria-hidden="true" style="color:#f97316"><use href="icons.svg#fa-heart"></use></svg> in Uganda</p>
       </div>
     </div>
   </footer>
 
   <a href="https://wa.me/256777728404?text=Hello%20Receptor%20Engineering%20Hub%2C%20I%20need%20your%20services." class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
+    <svg class="icon" aria-hidden="true"><use href="icons.svg#fa-whatsapp"></use></svg>
     <span class="whatsapp-tooltip">Chat with us</span>
   </a>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>
 

@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1600&q=80&auto=format&fit=crop" fetchpriority="high" />
+
     <meta name="google-site-verification" content="k3c63kH6gn9kZT188aulxfWurAG4fihmwfax7aLUwMc" />
   <meta name="description" content="About Receptor Engineering Hub - Our mission, vision, story and why clients trust us." />
   <title>About Us | Receptor Engineering Hub</title>
     <link rel="icon" type="image/png" href="receptorhub.png" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" /></noscript>
 </head>
 <body>
 
@@ -17,7 +21,7 @@
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
       <a href="index.html" class="logo">
-        <img src="receptorhub.png" alt="Receptor Engineering Hub" class="logo-img" />
+        <img src="receptorhub.png" alt="Receptor Engineering Hub" class="logo-img" width="48" height="68" />
         <div class="logo-text">
           <span class="logo-main">Receptor Engineering Hub</span>
         </div>
@@ -37,12 +41,14 @@
     </div>
   </nav>
 
+  <main>
+
   <!-- Page Hero -->
   <section class="page-hero">
     <div class="page-hero-slideshow">
-      <div class="page-hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1600&q=80')"></div>
-      <div class="page-hero-slide" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80')"></div>
-      <div class="page-hero-slide" style="background-image: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1600&q=80')"></div>
+      <div class="page-hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1600&q=80&auto=format&fit=crop')"></div>
+      <div class="page-hero-slide" data-bg="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80&auto=format&fit=crop"></div>
+      <div class="page-hero-slide" data-bg="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1600&q=80&auto=format&fit=crop"></div>
       <div class="page-hero-overlay"></div>
     </div>
     <div class="container" style="position:relative;z-index:1">
@@ -56,18 +62,18 @@
   <section class="section">
     <div class="container mv-grid">
       <div class="mv-card mission" data-aos="fade-up">
-        <div class="mv-icon"><i class="fas fa-bullseye"></i></div>
-        <h3>Our Mission</h3>
+        <div class="mv-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-bullseye"></use></svg></div>
+        <h2>Our Mission</h2>
         <p>To deliver innovative, reliable, and affordable engineering and digital solutions that empower businesses, homeowners, and organizations across Uganda and beyond — driving growth, security, and sustainability.</p>
       </div>
       <div class="mv-card vision" data-aos="fade-up" data-aos-delay="150">
-        <div class="mv-icon"><i class="fas fa-eye"></i></div>
-        <h3>Our Vision</h3>
+        <div class="mv-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-eye"></use></svg></div>
+        <h2>Our Vision</h2>
         <p>To be East Africa's most trusted multi-service engineering and technology company, recognized for excellence, innovation, and transformative impact in every project we undertake.</p>
       </div>
       <div class="mv-card values" data-aos="fade-up" data-aos-delay="300">
-        <div class="mv-icon"><i class="fas fa-gem"></i></div>
-        <h3>Our Values</h3>
+        <div class="mv-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-gem"></use></svg></div>
+        <h2>Our Values</h2>
         <p>Integrity, innovation, quality, and customer-first thinking guide everything we do. We believe in building long-term relationships through honest work and exceptional results.</p>
       </div>
     </div>
@@ -84,7 +90,7 @@
         <p>Today, we serve hundreds of clients across Uganda, from individual homeowners to large organizations, delivering projects that make a real difference.</p>
       </div>
       <div class="story-image" data-aos="fade-left">
-        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Engineering team working" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&auto=format&fit=crop" alt="Engineering team working" loading="lazy" width="600" height="400" />
       </div>
     </div>
   </section>
@@ -99,44 +105,44 @@
       </div>
       <div class="why-about-grid">
         <div class="why-about-item" data-aos="fade-up" data-aos-delay="0">
-          <div class="why-about-icon"><i class="fas fa-user-tie"></i></div>
+          <div class="why-about-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-user-tie"></use></svg></div>
           <div>
-            <h4>Experienced Team</h4>
+            <h3>Experienced Team</h3>
             <p>Our engineers and developers bring years of hands-on experience across multiple disciplines.</p>
           </div>
         </div>
         <div class="why-about-item" data-aos="fade-up" data-aos-delay="100">
-          <div class="why-about-icon"><i class="fas fa-certificate"></i></div>
+          <div class="why-about-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-certificate"></use></svg></div>
           <div>
-            <h4>Certified &amp; Compliant</h4>
+            <h3>Certified &amp; Compliant</h3>
             <p>All installations and projects meet industry standards and local regulatory requirements.</p>
           </div>
         </div>
         <div class="why-about-item" data-aos="fade-up" data-aos-delay="200">
-          <div class="why-about-icon"><i class="fas fa-tools"></i></div>
+          <div class="why-about-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-tools"></use></svg></div>
           <div>
-            <h4>End-to-End Service</h4>
+            <h3>End-to-End Service</h3>
             <p>From consultation and design to installation and after-sales support — we handle it all.</p>
           </div>
         </div>
         <div class="why-about-item" data-aos="fade-up" data-aos-delay="300">
-          <div class="why-about-icon"><i class="fas fa-handshake"></i></div>
+          <div class="why-about-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-handshake"></use></svg></div>
           <div>
-            <h4>Client-First Approach</h4>
+            <h3>Client-First Approach</h3>
             <p>We listen, understand your needs, and tailor solutions that truly work for you.</p>
           </div>
         </div>
         <div class="why-about-item" data-aos="fade-up" data-aos-delay="400">
-          <div class="why-about-icon"><i class="fas fa-leaf"></i></div>
+          <div class="why-about-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-leaf"></use></svg></div>
           <div>
-            <h4>Sustainable Solutions</h4>
+            <h3>Sustainable Solutions</h3>
             <p>We prioritize eco-friendly technologies like solar to reduce environmental impact.</p>
           </div>
         </div>
         <div class="why-about-item" data-aos="fade-up" data-aos-delay="500">
-          <div class="why-about-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="why-about-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-shield-alt"></use></svg></div>
           <div>
-            <h4>Reliability You Can Count On</h4>
+            <h3>Reliability You Can Count On</h3>
             <p>We stand behind our work with warranties and ongoing maintenance support.</p>
           </div>
         </div>
@@ -153,27 +159,27 @@
       </div>
       <div class="team-grid">
         <div class="team-card" data-aos="fade-up" data-aos-delay="0">
-          <div class="team-avatar"><img src="Noel.jpeg" alt="Econi Noel Aita" /></div>
-          <h4>Econi Noel Aita</h4>
+          <div class="team-avatar"><img src="Noel.jpeg" alt="Econi Noel Aita" width="90" height="90" /></div>
+          <h3>Econi Noel Aita</h3>
           <span>Lead Engineer — Electrical &amp; Solar Systems</span>
         </div>
         <div class="team-card" data-aos="fade-up" data-aos-delay="100">
           <div class="team-avatar">
-            <div class="avatar-placeholder male"><i class="fas fa-user-shield"></i></div>
+            <div class="avatar-placeholder male"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-user-shield"></use></svg></div>
           </div>
-          <h4>Security Specialist</h4>
+          <h3>Security Specialist</h3>
           <span>CCTV &amp; Access Control</span>
         </div>
         <div class="team-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="team-avatar"><img src="faith.png" alt="Drichiru Faith" /></div>
-          <h4>Drichiru Faith</h4>
+          <div class="team-avatar"><img src="faith.png" alt="Drichiru Faith" width="90" height="90" /></div>
+          <h3>Drichiru Faith</h3>
           <span>Full Stack Developer — Web &amp; Software Solutions</span>
         </div>
         <div class="team-card" data-aos="fade-up" data-aos-delay="300">
           <div class="team-avatar">
-            <div class="avatar-placeholder female"><i class="fas fa-paint-brush"></i></div>
+            <div class="avatar-placeholder female"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-paint-brush"></use></svg></div>
           </div>
-          <h4>Creative Designer</h4>
+          <h3>Creative Designer</h3>
           <span>Graphics &amp; Branding</span>
         </div>
       </div>
@@ -194,23 +200,25 @@
     </div>
   </section>
 
+  </main>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="logo logo-light">
-          <img src="receptorhub.png" alt="Receptor Engineering Hub" class="logo-img logo-img-footer" />
+          <img src="receptorhub.png" alt="Receptor Engineering Hub" class="logo-img logo-img-footer" width="51" height="72" />
         </a>
         <p>Powering Innovation. Securing the Future. Building Digital Excellence.</p>
         <div class="social-links">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-facebook-f"></use></svg></a>
+          <a href="#" aria-label="Twitter"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-twitter"></use></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-linkedin-in"></use></svg></a>
+          <a href="#" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-instagram"></use></svg></a>
         </div>
       </div>
       <div class="footer-links">
-        <h4>Quick Links</h4>
+        <h3>Quick Links</h3>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
@@ -221,7 +229,7 @@
         </ul>
       </div>
       <div class="footer-links">
-        <h4>Services</h4>
+        <h3>Services</h3>
         <ul>
           <li><a href="services.html#solar">Solar Systems</a></li>
           <li><a href="services.html#security">Security Systems</a></li>
@@ -231,29 +239,29 @@
         </ul>
       </div>
       <div class="footer-contact">
-        <h4>Contact Us</h4>
+        <h3>Contact Us</h3>
         <ul>
-          <li><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</li>
-          <li><i class="fas fa-phone"></i> <a href="tel:+256777728404">+256 777 728 404</a></li>
-          <li><i class="fas fa-envelope"></i> <a href="mailto:receptorengineeringhub@gmail.com">receptorengineeringhub@gmail.com</a></li>
-          <li><i class="fas fa-clock"></i> Mon–Fri: 8:30am–5pm | Sat &amp; Holidays: 9am–4pm</li>
+          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-map-marker-alt"></use></svg> Kampala, Uganda</li>
+          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-phone"></use></svg> <a href="tel:+256777728404">+256 777 728 404</a></li>
+          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-envelope"></use></svg> <a href="mailto:receptorengineeringhub@gmail.com">receptorengineeringhub@gmail.com</a></li>
+          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#fa-clock"></use></svg> Mon–Fri: 8:30am–5pm | Sat &amp; Holidays: 9am–4pm</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="container">
         <p>&copy; 2025 Receptor Engineering Hub. All rights reserved.</p>
-        <p>Designed with <i class="fas fa-heart" style="color:#f97316"></i> in Uganda</p>
+        <p>Designed with <svg class="icon" aria-hidden="true" style="color:#f97316"><use href="icons.svg#fa-heart"></use></svg> in Uganda</p>
       </div>
     </div>
   </footer>
 
   <a href="https://wa.me/256777728404?text=Hello%20Receptor%20Engineering%20Hub%2C%20I%20need%20your%20services." class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
+    <svg class="icon" aria-hidden="true"><use href="icons.svg#fa-whatsapp"></use></svg>
     <span class="whatsapp-tooltip">Chat with us</span>
   </a>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>
 
